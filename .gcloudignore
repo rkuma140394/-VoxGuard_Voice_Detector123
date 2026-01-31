@@ -3,9 +3,13 @@
 node_modules/
 dist/
 .DS_Store
-*.swp
 
-# Exclude Frontend specific files from the backend API container to keep it light
+# Explicitly include backend files
+!Dockerfile
+!requirements.txt
+!main.py
+
+# Exclude all frontend files to prevent build confusion
 index.html
 index.tsx
 App.tsx
@@ -16,8 +20,3 @@ metadata.json
 package.json
 package-lock.json
 tsconfig.json
-
-# Explicitly ensure build files are included
-!Dockerfile
-!requirements.txt
-!main.py
