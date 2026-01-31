@@ -1,0 +1,23 @@
+.git
+.gitignore
+node_modules/
+dist/
+.DS_Store
+*.swp
+
+# Exclude Frontend specific files from the backend API container to keep it light
+index.html
+index.tsx
+App.tsx
+components/
+services/
+types.ts
+metadata.json
+package.json
+package-lock.json
+tsconfig.json
+
+# Explicitly ensure build files are included
+!Dockerfile
+!requirements.txt
+!main.py

@@ -1,0 +1,7 @@
+{
+  "name": "VoxGuard: AI Voice Detector",
+  "description": "An advanced voice authentication and verification system that uses Gemini's multimodal capabilities to distinguish between human and AI-generated audio samples in Tamil, English, Hindi, Malayalam, and Telugu.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
